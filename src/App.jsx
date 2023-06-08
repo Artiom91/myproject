@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-custom-image bg-no-repeat bg-cover absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
       <React.StrictMode>
-        <BrowserRouter basename='/myproject'>
+        <BrowserRouter>
           <Header />
           <main className="flex-grow">
             <Routes>
@@ -19,7 +19,7 @@ function App() {
               <Route path="about" Component={About} />
               <Route path="portfolio" Component={Portfolio} />
               <Route path="resume" Component={Resume} />
-              <Route path='contact' Component={ContactNow}/>
+              <Route path="contact" Component={ContactNow} />
             </Routes>
           </main>
         </BrowserRouter>
