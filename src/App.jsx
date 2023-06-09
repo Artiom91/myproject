@@ -8,12 +8,11 @@ import { Resume } from './pages/Resume'
 import { ContactNow } from './pages/ContactNow'
 
 function App() {
-  const basename = window.location.hostname === 'localhost' ? '/' : '/myproject'
 
   return (
     <div className="min-h-screen flex flex-col bg-custom-image bg-no-repeat bg-cover absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
       <React.StrictMode>
-        <BrowserRouter basename={basename}>
+        <BrowserRouter basename='/'>
           <Header />
           <main className="flex-grow">
             <Routes>
