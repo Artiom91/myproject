@@ -16,11 +16,11 @@ function App() {
           <Header />
           <main className="flex-grow">
             <Routes>
-              <Route path="/" Component={Home} />
-              <Route path="/about" Component={About} />
-              <Route path="/portfolio" Component={Portfolio} />
-              <Route path="/resume" Component={Resume} />
-              <Route path="/contact" Component={ContactNow} />
+              <Route path="/" element={<Home />} index/>
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/contact" element={<ContactNow />} />
             </Routes>
           </main>
         </BrowserRouter>
