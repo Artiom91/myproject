@@ -1,6 +1,6 @@
 
 export const routes = Object.freeze( {
-    home: '/',
+    home: '/myproject',
     about1: Object.freeze({
         me: 'about/me',
         career: 'about/career'
@@ -8,6 +8,6 @@ export const routes = Object.freeze( {
     portfolio: '/portfolio',
     about: '/about',
     resume: '/resume',
-    contactnow: '/contact'
+    contactnow: '/contact', 
 })
 

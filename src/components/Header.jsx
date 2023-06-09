@@ -146,7 +146,9 @@ function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link to="/" className="text-sm font-semibold leading-6 text-white">
+          <Link
+            to={routes.home}
+            className="text-sm font-semibold leading-6 text-white">
             Home
           </Link>
           <Link
