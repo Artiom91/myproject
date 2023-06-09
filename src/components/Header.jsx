@@ -16,6 +16,7 @@ import {
   PlayCircleIcon,
 } from '@heroicons/react/20/solid'
 import { Link } from 'react-router-dom'
+import { routes } from '../config'
 
 const products = [
   {
@@ -145,25 +146,29 @@ function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link
-            to="/"
-            className="text-sm font-semibold leading-6 text-white">
+          <Link to="/" className="text-sm font-semibold leading-6 text-white">
             Home
           </Link>
           <Link
-            to="/About"
+            to={routes.about}
             className="text-sm font-semibold leading-6 text-white duration-500 hover:text-yellow-400">
             About
           </Link>
-          <Link to="/portfolio" className="text-sm font-semibold leading-6 text-white">
+          <Link
+            to={routes.portfolio}
+            className="text-sm font-semibold leading-6 text-white">
             Portfolio
           </Link>
-          <Link to="resume" className="text-sm font-semibold leading-6 text-white">
+          <Link
+            to={routes.resume}
+            className="text-sm font-semibold leading-6 text-white">
             Resume
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link to="/contact" className="text-sm font-semibold leading-6 text-white">
+          <Link
+            to={routes.contactnow}
+            className="text-sm font-semibold leading-6 text-white">
             Contact Now <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>

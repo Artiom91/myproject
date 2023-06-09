@@ -6,21 +6,21 @@ import { About } from './pages/About'
 import { Portfolio } from './pages/Portfolio'
 import { Resume } from './pages/Resume'
 import { ContactNow } from './pages/ContactNow'
+import { routes } from './config'
 
 function App() {
-
   return (
     <div className="min-h-screen flex flex-col bg-custom-image bg-no-repeat bg-cover absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
       <React.StrictMode>
-        <BrowserRouter basename='/'>
+        <BrowserRouter basename="/">
           <Header />
           <main className="flex-grow">
             <Routes>
-              <Route path="/" element={<Home />} index/>
-              <Route path="/about" element={<About />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/resume" element={<Resume />} />
-              <Route path="/contact" element={<ContactNow />} />
+              <Route element={<Home />} />
+              <Route path={routes.resume} element={<Resume />} />
+              <Route path={routes.portfolio} element={<Portfolio />} />
+              <Route path={routes.contactnow} element={<ContactNow />} />
+              <Route path={routes.about} element={<About />} />
             </Routes>
           </main>
         </BrowserRouter>
