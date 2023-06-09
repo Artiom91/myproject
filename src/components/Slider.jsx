@@ -1,11 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import javascriptLogo from '../img/logo-javascript.png'
-import sassLogo from '../img/sass-logo.png'
-import cssLogo from '../img/css.png'
-import reactLogo from '../img/React-icon.png'
+import javascriptLogo from '../img/logo-javascript.svg'
+import sassLogo from '../img/sass-logo.svg'
+import cssLogo from '../img/css.svg'
+import reactLogo from '../img/React-icon.svg'
 import { Autoplay } from 'swiper'
-
 
 function Slider() {
   return (
