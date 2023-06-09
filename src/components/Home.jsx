@@ -1,5 +1,4 @@
 import {} from '../img/facebook1.svg'
-
 import { Slider } from './Slider'
 
 const Home = () => {
