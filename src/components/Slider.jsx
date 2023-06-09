@@ -23,23 +23,17 @@ function Slider() {
           modules={[Autoplay]}
           className="h-full">
           <SwiperSlide>
-            <img src={cssLogo} alt="JavaScript" className="w-20" />
+            <img src={cssLogo} alt="CssLogo" className="w-20" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={javascriptLogo} alt="TypeScript" className="w-20" />
+            <img src={javascriptLogo} alt="JSlogo" className="w-20" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={reactLogo} alt="PHP" className="w-20" />
+            <img src={reactLogo} alt="reactLogo" className="w-20" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={sassLogo} alt="SASS" className="w-20" />
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <img src={logo} alt="Docker" className="w-20" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={logo} alt="JetBrains" className="w-20" />
-          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>
